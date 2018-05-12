@@ -1,0 +1,97 @@
+body{
+	background-color: grey;
+	color: green;
+	font-size: 25px;
+	text-align: center;
+	font-family: helvetica;
+	/*background-image: url("images/rio.png");*/
+
+
+}
+
+h1{
+	font-family: Courier;
+	color: white;
+	font-weight: light;
+	text-align: center;
+	border: 3px solid white;
+	box-shadow: 8px 8px 60px;
+	box-shadow-color: black;
+
+}
+
+#banner{
+	text-align: center;
+	background-image: url("https://picsum.photos/700/600/?random");
+	background-size: cover;
+	padding: 50px;
+	color: white;
+	text-shadow: 1px 1px 5px;
+	height: 300px;
+
+}
+
+#banner h1, p{
+	color: white;
+	font-size: 50px;
+}
+
+.card{
+	text-align: center;
+	padding: 80px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+h2{
+	font-family: Courier;
+	color: pink;
+	font-size: 28px;
+}
+
+h2:hover{
+	color: blue;
+	font-size: 50px;
+}
+
+p{
+	font-size: 20px;
+}
+
+a {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+	font-size: 100px;
+}
+
+#footer{
+	font-size: 20px;
+	padding: 50px;
+	background: rgb(30, 30, 30);
+	color: rgb(240, 240, 240);
+}
+
+.social{
+	background-color: white;
+	padding: 1%;
+	display: inline-block;
+
+}
+
+ul#horizontal-list li {
+		display: inline;
+	}
+
+ul {
+ list-style: none;
+}
+
+strong{
+	border: 3px solid white;
+	padding: 5px;
+	margin: 10px;
+}
