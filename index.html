@@ -4,15 +4,28 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>My landing page</title>
+
+                                          <style>
+                                              #map {
+                                                height:400px;
+                                                width:100%;
+                                                margin-top: 10vh;
+                                            }
+                                            </style>
+
+
 </head>
 
 <body>
 
     <div id="banner">  
+       
        <h1>Le Wagon Coding Day</h1>
-    <p>C'est la ligne super importante</p>
+
+    <h4>C'est la ligne super importante</h4>
+
     <p><a href="http://www.lewagon.com">Inscrivez vous!</a></p>
-    </div>
+</div>
 
     <div class="card"><img src="images/briefcase.png" alt="picture description" width="100">
     <h2>Simple</h2>
@@ -26,9 +39,25 @@
     <h2>Cool</h2>
     <p>A cool app, <strong>very cool app</strong> app</p></div>
 
-    <div><img src="images/laptop.png" alt="picture description" width="100">
+    <div class="card"=><img src="images/laptop.png" alt="picture description" width="100">
     <h2>Awesome</h2>
     <p>An awesome app, <strong>very awesome</strong> app</p></div>
+
+    <div id="map"></div>
+  
+
+                                      <script>
+                                      function initMap(){
+                                        var options = {
+                                          zoom: 11,
+                                          center: {lat: 48.8566, lng: 2.3522}
+                                        }
+                                      var map = new google.maps.Map(document.getElementById('map'), options);
+                                    }
+                                      </script>
+
+                                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDItCpJYncSyuAMZZMQuBsvpn6BD0gbU&callback=initMap"
+                                      async defer></script>
 
 <div id="footer"><p>Ceci est le footer de la page!</p>
       <ul id="horizontal-list">
@@ -37,6 +66,11 @@
         <li><a href="#" class="social"><i class="fab fa-linkedin"></i></a></li>
       </ul>
 </div>
+
+<div style="font-size:3em; color:Tomato">
+  <i class="fas fa-camera-retro"></i>
+</div>
+
 
 </body>
 </html>
